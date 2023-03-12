@@ -1,0 +1,12 @@
+<div class="contenitorePadre">
+    <app-transazione-detail *ngFor="let elmentoIessimoOggettoTransazione of arrayDiOggettiTransazioni" [elmentoIessimoOggettoTransazion]="elmentoIessimoOggettoTransazione" >
+        <!-- ! il tag "app-transazione-detail" è il CHIAMANTE.Il numero di chiamate che verrano effetuate è pari al numero di "elmentoIessimoOggettoTransazione"-->
+        <!-- !il numero di volte che noi scriviamo il tag "app-transazione-detail" è pari al numero di "elmentoIessimoOggettoTransazione"-->
+        <!-- ! In questo caso  è come se noi scrivessimo  10 volte il tag "app-transazione-detail"-->
+        <!-- ! Per cui quei 10 tag "app-transazione-detail" lo inserisco dentro un div di classe "contenitorePadre" -->
+    
+    
+        <!-- {{elmentoIessimoOggettoTransazione.name}} -->
+    </app-transazione-detail>
+    
+</div>

@@ -1,0 +1,12 @@
+<!-- <div  class="contenitoreIessimo"> -->
+    <div  class="contenitoreIessimo" *ngIf="elmentoIessimoOggettoTransazion != undefined" [ngClass]="{'typeInvoice': elmentoIessimoOggettoTransazion.type === 'invoice', 'typeWithdrawal': elmentoIessimoOggettoTransazion.type === 'withdrawal'}">
+        <p><strong>{{elmentoIessimoOggettoTransazion.business}}</strong></p>
+        <p>{{elmentoIessimoOggettoTransazion.name}}</p>
+        <p><span>ACCOUNT:</span>  {{elmentoIessimoOggettoTransazion.account}}</p>
+        <p><span>DATE:</span> {{elmentoIessimoOggettoTransazion.date * 1000 | date:"dd/MM/yyyy"}}</p>
+        <p><span>TYPE:</span> {{elmentoIessimoOggettoTransazion.type}}</p>
+        <p [ngClass]="{'accountYellow': elmentoIessimoOggettoTransazion.amount > 700, 'accountBlue': elmentoIessimoOggettoTransazion.amount < 700}"><span>AMOUNT:</span>  {{elmentoIessimoOggettoTransazion.amount  | currency}}</p>
+    
+    </div>
+<!-- </div> -->
+<!--! [ngClass]="{'typeInvoice': elmentoIessimoOggettoTransazion.type === 'invoice'}" .Esso lo devo scrivere per forza come attributo del tag div di classe "contenitoreIessimo" perche il nome di variabile "elmentoIessimoOggettoTransazion" è VISIBILE nella riga 2 e nel CONTENUTO del tag div di classe "contenitoreIessimo" e basta-->

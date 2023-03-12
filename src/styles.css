@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: robotoregular;/*! esso lo posso chiamare come voglio */
+    src: 
+        url(./font/roboto-regular-webfont.woff2) format('woff2'),
+        url(./font/roboto-regular-webfont.woff) format('woff'),
+        url(./font/Roboto-Regular.ttf);
+   
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: normal;
+    font-size: 16px;
+    font-family: robotoregular;
+}
+
+h1, h4 {
+    text-align: center;
+    color: #f00;
+}
+
+.contenitorePadre {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr); /** oppure 1fr 1fr 1fr */
+
+    gap: 3%;
+   
+}
+
+.contenitoreIessimo {
+    border: 5px solid #b91919;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    min-height: 350px;
+    padding: 0 7%;
+}
+
+.typeInvoice {
+    background-color: rgba(0, 255, 0, 0.529);
+}
+
+.typeWithdrawal {
+    background-color: rgba(67, 68, 76, 0.964);
+}
+
+.accountYellow {
+    background-color: #dada23;
+    border: 3px #dada23 solid;
+}
+
+.accountBlue {
+    background-color: rgba(0, 42, 255, 0.674);
+    border: 3px rgba(0, 42, 255, 0.682) solid;
+
+}
+
+.contenitoreIessimo p strong {
+    font-size: 1.4rem;
+    color: #f00;
+}
+
+.contenitoreIessimo p span {
+    color: #f00;
+
+}
+
